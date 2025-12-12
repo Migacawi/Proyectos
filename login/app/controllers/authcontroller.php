@@ -18,7 +18,7 @@ class AuthController {
         $password = $_POST['password'] ?? '';
         $password2 = $_POST['password2'] ?? '';
 
-        // Validaciones mínimas (puedes ampliar)
+        
         if (empty($nombre) || empty($correo) || empty($password)) {
             echo "<script>alert('Completa todos los campos'); window.location='../registro.php';</script>";
             exit;
@@ -71,3 +71,4 @@ class AuthController {
         }
     }
 }
+
